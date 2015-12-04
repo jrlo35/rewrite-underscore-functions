@@ -105,6 +105,16 @@
 
   // Produce a duplicate-free version of the array.
   _.uniq = function(array) {
+    var temp ={};
+    var result=[];
+    _.each(array, function(item){
+      temp[item]=item;
+    })
+    for (var key in temp){
+      result.push(parseInt(key));
+    }
+    return result;
+
   };
 
 
