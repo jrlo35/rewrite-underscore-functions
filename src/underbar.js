@@ -317,8 +317,9 @@
             return obj[key];
         }
         else{
-            obj[key]=fn.apply(null, arguments);
+            obj[key]=func.apply(null, arguments);
             return obj[key];
+            
         }
         
     }
